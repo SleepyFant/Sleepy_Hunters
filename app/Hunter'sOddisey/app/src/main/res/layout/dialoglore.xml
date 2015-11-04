@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content" android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@color/book_loading_page">
+
+    <com.victor.loading.book.BookLoading
+        android:id="@+id/bookloading"
+        android:layout_width="150dp"
+        android:layout_height="100dp"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:text="Sending apprentices \nto retrieve the sacred scrolls..."
+        android:id="@+id/scrolls"
+        android:background="@color/book_loading_page"
+        android:textColor="@color/book_loading_book"
+        android:textSize="35sp"
+        android:padding="10dp"
+        android:gravity="center_vertical|center_horizontal" />
+</LinearLayout>

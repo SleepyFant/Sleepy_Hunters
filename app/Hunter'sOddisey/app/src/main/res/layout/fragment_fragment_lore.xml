@@ -1,0 +1,50 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.sleepyfant.dev.huntersoddisey.FRAGMENTS.FragmentLore"
+    android:paddingTop="66dp"
+    android:background="@drawable/papel">
+
+    <com.sleepyfant.dev.huntersoddisey.UTILS.PageTurnLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <LinearLayout
+            android:orientation="vertical"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+            <ImageView
+                android:layout_height="match_parent"
+                android:layout_width="match_parent"
+                android:src="@drawable/logo"
+
+                android:layout_weight="0.8" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textAppearance="?android:attr/textAppearanceLarge"
+                android:text="Hunter&apos;s Odissey"
+                android:id="@+id/hunterTitle"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginBottom="40dp"
+                android:textSize="150sp"
+                android:layout_weight="0.2" />
+        </LinearLayout>
+
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:text="Something something something something Something something something something Something something something something Something something something something Something something something something Something something something something Something something something something Something something something something Something something something something"
+            />
+
+        <TextView
+            android:layout_height="match_parent"
+            android:layout_width="match_parent"
+            android:text="Something something something something Something something something something Something something something something Something something something something Something something something something Something something something something Something something something something Something something something something Something something something something"
+            />
+
+    </com.sleepyfant.dev.huntersoddisey.UTILS.PageTurnLayout>
+
+
+</FrameLayout>
