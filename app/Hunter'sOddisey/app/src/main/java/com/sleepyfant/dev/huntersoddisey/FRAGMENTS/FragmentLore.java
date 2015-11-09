@@ -5,29 +5,16 @@ import android.app.Dialog;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.graphics.drawable.ColorDrawable;
-import android.net.Uri;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
-import android.support.v7.widget.LinearLayoutManager;
-import android.support.v7.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
-import android.view.Window;
 import android.view.WindowManager;
 import android.widget.TextView;
 
-import com.github.jlmd.animatedcircleloadingview.AnimatedCircleLoadingView;
-import com.sleepyfant.dev.huntersoddisey.ADAPTERS.RVadapter;
-import com.sleepyfant.dev.huntersoddisey.EVENTS.NewsRecievedEvent;
-import com.sleepyfant.dev.huntersoddisey.MANAGERS.APIManager;
 import com.sleepyfant.dev.huntersoddisey.R;
 import com.victor.loading.book.BookLoading;
-
-import org.w3c.dom.Text;
-
-import de.greenrobot.event.EventBus;
-import de.greenrobot.event.Subscribe;
 
 public class FragmentLore extends Fragment {
 
@@ -44,6 +31,9 @@ public class FragmentLore extends Fragment {
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,Bundle savedInstanceState) {
+        getActivity().getWindow().setFlags(
+                WindowManager.LayoutParams.FLAG_HARDWARE_ACCELERATED,
+                WindowManager.LayoutParams.FLAG_HARDWARE_ACCELERATED);
         Typeface myTypeface = Typeface.createFromAsset(getActivity().getAssets(), "marathon.ttf");
         final View v = inflater.inflate(R.layout.fragment_fragment_lore, container, false);
         TextView tv = (TextView) v.findViewById(R.id.hunterTitle);
